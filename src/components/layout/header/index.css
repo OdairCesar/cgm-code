@@ -1,5 +1,8 @@
+.header{
+    height: 127px;
+    font-size: 18px;
+}
 .att{
     background-color: #12A2DA;
     border-radius: 25px;
-    font-size: 18px;
 }

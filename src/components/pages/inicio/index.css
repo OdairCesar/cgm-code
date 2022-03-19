@@ -1,0 +1,126 @@
+/*=================== seção "Banner/Inicio" ===================*/
+.banner-inicio{
+    background-image: linear-gradient(#111E27b3, #111E27b3), url("../../../assets/img/banner1.png");
+    margin-top: 127px;
+}
+
+.banner-inicio-conteudo{
+    height: 772px;
+}
+
+.efeito-loop{
+    height: 3.5px;
+    width: 357px;
+    background-color: #12A2DA;
+}
+
+.circulo-ativo{
+    height: 10px;
+    width: 10px;
+    background-color: #12A2DA;
+    border-radius: 100%;
+}
+
+.circulo{
+    height: 10px;
+    width: 10px;
+    background-color: #8a8a8a;
+    border-radius: 100%;
+}
+
+/*=================== seção "Soluções" ===================*/
+.solucoes-titulo{
+    margin-top: 100px;
+}
+
+.solucoes-titulo h1{
+    color: #1B5588;
+    font-size: 60px;
+}
+
+.solucoes-titulo img{
+    position: absolute;
+    margin-top: -200px;
+    width: 400px;
+}
+
+.solucoes-titulo span{
+    color: #8D9C96;
+    font-size: 20px;
+}
+
+.cardApresentacao img{
+    width: 645px;
+    position: relative;
+    z-index: 0;
+}
+
+.cardApresentacao span{
+    background-color: #1B5588;
+    margin-top: -25px;
+    padding: 15px 30px;
+    border-radius: 30px;
+
+    font-size: 18px;
+    color: #ffffff;
+    z-index: 9;
+}
+
+.parceiros-inicio h2{
+    color: #4D6361;
+}
+
+.detalhe-parceiros{
+    height: 4px;
+    width: 58px;
+    background: rgb(93,152,197);
+    background: linear-gradient(90deg, #5d98c5, #5d98c500);
+    border-radius: 5px;
+}
+
+.cardParceiros{
+    padding: 40px 60px;
+    box-shadow: 0px 60px 50px #1b558844;
+    border-radius: 5px;
+}
+
+/*=================== seção "Depoimentos" ===================*/
+.depoimentos{
+    background-color: #F0F2F5;
+    color: #4D6361;
+}
+
+.img-depoimentos{
+    position: absolute;
+    margin-left: -190px;
+    margin-top: 3em;
+    z-index: 0;
+}
+
+.cardDepoimento{
+    width: 415px;
+    z-index: 9;
+}
+
+.cardDepoimento .avaliacao{
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #fefeff;
+    box-shadow: 0px 5px 10px #1b55880c;
+}
+
+.cardDepoimento .avaliacao img{
+    margin-left: -10px;
+}
+
+.historia{
+    color: #4D6361;
+}
+
+.button-historia{
+    background-color: #12A2DA;
+    padding: 0.8em;
+    width: 320px;
+    border: none;
+    border-radius: 35px;
+}

@@ -8,25 +8,29 @@ import Menu from '../menu'
 
 export default function Header(){
     return(
-        <header class='container'>
-            <div class='d-flex align-items-center justify-content-between my-4'>
-                <img src={logo} alt='Logotipo'/>
+        <section className=' fixed-top bg-white'>
+        <header className='container'>
+            <div className='header d-flex align-items-center justify-content-between align-items-center'>
+                <div className='d-flex'>
+                    <img className='me-5' src={logo} alt='Logotipo'/>
 
-                <Menu />
+                    <Menu/>
+                </div>
                 
-                <div class='d-flex align-items-center'>
-                    <div class='d-flex redes-socias'>
-                        <Icone cssBootstrap='bg-secondary text-light px-2' nameIcone='facebook'/>
-                        <Icone cssBootstrap='bg-secondary text-light px-1' nameIcone='linkedin'/>
-                        <Icone cssBootstrap='bg-secondary text-light px-1' nameIcone='instagram'/>
+                <div className='d-flex align-items-center'>
+                    <div className='d-flex redes-socias'>
+                        <Icone cssBootstrap='bg-secondary text-light px-2 rounded-circle m-1' nameIcone='facebook'/>
+                        <Icone cssBootstrap='bg-secondary text-light px-1 rounded-circle m-1' nameIcone='linkedin'/>
+                        <Icone cssBootstrap='bg-secondary text-light px-1 rounded-circle m-1' nameIcone='instagram'/>
                     </div>
 
                     <div className='d-flex align-items-center text-white ms-3 px-4 py-1 att'>
-                        <span>Atendimento</span>
+                        <span className='py-1 pe-2'>Atendimento</span>
                         <Icone nameIcone='whatsapp' />
                     </div>
                 </div>
             </div>
         </header>
+        </section>
     )
 }
