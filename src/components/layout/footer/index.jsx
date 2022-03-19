@@ -3,6 +3,7 @@ import React from "react";
 import "./index.css";
 
 import imgLogo from "../../../assets/img/logo2.png";
+import imgLogo2rs from "../../../assets/img/image11.png";
 import Icone from "../../template/icone";
 
 export default function Footer() {
@@ -44,9 +45,9 @@ export default function Footer() {
       </section>
 
       <section className="copy">
-        <div className="container">
-          <p>CGM @copy 2022 - Todos os direitos reservados</p>
-          <img />
+        <div className="container d-flex justify-content-between align-items-center py-2">
+          <p className="py-0 my-0">CGM © 2022 - Todos os direitos reservados</p>
+          <img src={imgLogo2rs} alt='Logo da desenvolvedora'/>
         </div>
       </section>
     </>

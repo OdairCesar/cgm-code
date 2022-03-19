@@ -1,0 +1,11 @@
+.titulo-dois{
+    color: #4D6361;
+}
+
+.detalhe-titulo-dois{
+    height: 4px;
+    width: 50%;
+    background: rgb(93,152,197);
+    background: linear-gradient(90deg, #5d98c5, #5d98c500);
+    border-radius: 5px;
+}

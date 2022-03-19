@@ -5,14 +5,14 @@ import "./index.css";
 import Menu from "../../layout/header";
 import Contato from "../../layout/contato";
 import Icone from "../../template/icone";
+import Depoimento from "../../layout/depoimento";
 
 import logo from "../../../assets/img/logo7.png";
 import imgPessoaFisica from "../../../assets/img/image4.png";
 import imgPessoaJurídica from "../../../assets/img/image6.png";
-import imgAsbas from "../../../assets/img/asbas.png";
-import imgDepoimentos from "../../../assets/img/image9.png";
 import imgHistoria from "../../../assets/img/image8.png";
 import Footer from "../../layout/footer";
+import TituloDois from "../../template/tituloDois";
 
 export default function Inicio() {
   return (
@@ -67,8 +67,9 @@ export default function Inicio() {
           </div>
 
           <div className="parceiros-inicio d-flex flex-column align-items-center my-5">
-            <h2>Nossos Parceiros</h2>
-            <div className="detalhe-parceiros"></div>
+            <TituloDois>
+              Nossos Parceiros
+            </TituloDois>
 
             <div className="swiper d-flex justify-content-between align-items-center mt-2">
               <div className="swiper-button-prev">
@@ -95,80 +96,7 @@ export default function Inicio() {
         </div>
       </section>
 
-      {/*================= DEPOIMENTOS =====================*/}
-      <section className="depoimentos">
-        <div className="container d-flex flex-column py-5">
-          <img
-            className="img-depoimentos"
-            src={imgDepoimentos}
-            alt="Desenho de fundo dos depoimentos"
-          />
-
-          <div className="depoimentos-titulo d-flex flex-column align-items-center">
-            <h1 className="pt-5 pb-3 text-center">
-              O que nossos clientes <br />
-              falam sobre nós:
-            </h1>
-            <div className="detalhe-parceiros"></div>
-          </div>
-
-          <div className="lista-depoimentos d-flex flex-row justify-content-between mt-5">
-            <div className="cardDepoimento">
-              <div className="avaliacao">
-                <img src={imgAsbas} alt="Depoimento" />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum....
-                </p>
-              </div>
-
-              <div className="fw-bolder mt-3">Cliente de Bauru - SP</div>
-            </div>
-
-            <div className="cardDepoimento">
-              <div className="avaliacao">
-                <img src={imgAsbas} alt="Depoimento" />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum....
-                </p>
-              </div>
-
-              <div className="fw-bolder mt-3">Cliente de Bauru - SP</div>
-            </div>
-
-            <div className="cardDepoimento">
-              <div className="avaliacao">
-                <img src={imgAsbas} alt="Depoimento" />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum....
-                </p>
-              </div>
-
-              <div className="fw-bolder mt-3">Cliente de Bauru - SP</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Depoimento />
 
       <section className="Historia">
         <div className="container d-flex py-5 align-items-stretch">

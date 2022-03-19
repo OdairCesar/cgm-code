@@ -1,0 +1,28 @@
+/*=================== seção "Depoimentos" ===================*/
+.depoimentos{
+    background-color: #F0F2F5;
+    color: #4D6361;
+}
+
+.img-depoimentos{
+    position: absolute;
+    margin-left: -190px;
+    margin-top: 3em;
+    z-index: 0;
+}
+
+.cardDepoimento{
+    width: 415px;
+    z-index: 9;
+}
+
+.cardDepoimento .avaliacao{
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #fefeff;
+    box-shadow: 0px 5px 10px #1b55880c;
+}
+
+.cardDepoimento .avaliacao img{
+    margin-left: -10px;
+}
