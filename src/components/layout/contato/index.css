@@ -1,0 +1,38 @@
+.contato{
+    background-color: #F0F2F5;
+}
+
+.titulo-contato h4{
+    color: #4D6361;
+}
+
+.titulo-contato h2{
+    color: #1B5588;
+}
+
+.contato-formulario input{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0.6em;
+    margin: 0.6em 0;
+}
+
+.contato-formulario textarea{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 8em;
+}
+
+.buttonFormulario{
+    background-color: #1B5588;
+    color: #fff;
+    width: 120px;
+
+    margin-top: 0.8em;
+    padding: 0.6em;
+    border: none;
+    border-radius: 25px;
+}
