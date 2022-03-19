@@ -8,7 +8,7 @@ import Inicio from './components/pages/inicio'
 function App() {
   return (
     <div className="App">
-      <Inicio />
+      <Sobre />
     </div>
   );
 }

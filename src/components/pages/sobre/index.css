@@ -1,0 +1,41 @@
+/*============== BANNER =============*/
+.banner-sobre{
+    background-image: url('../../../assets/img/banner2.png');
+    height: 520px;
+    margin-top: 127px;
+}
+.banner-sobre div{
+    height: 100%;
+}
+.banner-sobre h1{
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+/*============= APRESENTACAO SOBRE ================*/
+.titulo-apresentacao-sobre{
+    color: #4D6361;
+    font-weight: 200;
+}
+.titulo-apresentacao-sobre h1{
+    font-weight: 800;
+    color: #1B5588;
+}
+
+/*============= IDEIAS ===============*/
+.ideias{
+    background-color: #F0F2F5;
+    color: #4D6361;
+}
+
+.lista-ideias h1{
+    color: #1B5588;
+    font-weight: 700;
+}
+
+.descricao-ideia{
+    background-color: #fff;
+    height: 250px;
+    border-radius: 22px;
+    box-shadow: 0px 40px 50px #1b558825;
+}
