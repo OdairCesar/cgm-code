@@ -20,10 +20,10 @@ export default function Sobre() {
 
       <section className="apresentacao-sobre py-5">
         <div className="container py-5">
-          <div className="d-flex">
-            <img className="col-4" src={imgLogoSobre} alt="" />
+          <div className="d-flex flex-column flex-md-row">
+            <img className="col-8 col-md-4" src={imgLogoSobre} alt="" />
 
-            <div className="d-flex flex-column col-8 justify-content-evenly">
+            <div className="d-flex flex-column col-md-8 justify-content-evenly">
               <div className="titulo-apresentacao-sobre">
                 <h5>Muito mais do que seguro.</h5>
                 <h1>Segurança!</h1>
@@ -75,11 +75,11 @@ export default function Sobre() {
         <div className="container d-flex flex-column py-3">
           <TituloDois>Nossas Ideias</TituloDois>
 
-          <div className="lista-ideias d-flex justify-content-between mt-5">
-            <div className="d-flex col-4">
+          <div className="lista-ideias d-flex flex-wrap justify-content-center mt-5">
+            <div className="d-flex col-md-6 col-xl-4">
               <div className="d-flex flex-column align-items-center">
                 <h1 className="py-3">Missão</h1>
-                <div className="descricao-ideia d-flex flex-column mx-3 px-3 text-center justify-content-center">
+                <div className="descricao-ideia d-flex flex-column mx-3 px-3 py-1 text-center justify-content-center">
                   <p>
                     Criar vínculos fortes e duradouros com nossos clientes,
                     fornecendo-lhes as melhores soluções de blindagem jurídica
@@ -92,7 +92,7 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className="d-flex col-4 align-self-stretch">
+            <div className="d-flex col-md-6 col-xl-4">
               <div className="d-flex flex-column align-items-center">
                 <h1 className="py-3">Visão</h1>
                 <div className="descricao-ideia d-flex flex-column mx-3 px-3 text-center justify-content-center">
@@ -106,7 +106,7 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className="d-flex col-4">
+            <div className="d-flex col-md-6 col-xl-4">
               <div className="d-flex flex-column align-items-center">
                 <h1 className="py-3">Missão</h1>
                 <div className="descricao-ideia d-flex flex-column mx-3 px-3 text-center justify-content-center">

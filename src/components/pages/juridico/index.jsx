@@ -19,23 +19,23 @@ export default function Juridico() {
       <section id='top' className="banner-juridico py-5">
         <div className="container-personalizado">
           <img
-            className="imagem-banner-juridico col-5"
+            className="d-none d-md-block imagem-banner-juridico col-md-6 col-xl-5 h-md-100"
             src={imgBannerJuridico}
             alt="Imagem banner da pagina juridico"
           />
 
-          <div className="d-flex flex-column align-items-center align-seft-center col-2">
-            <img src={imgLogoJuridico} alt="Logotipo" />
-            <img src={imgSeta} alt="Ver mais" />
+          <div className="d-none d-xl-flex flex-column align-items-center align-seft-center col-xl-3">
+            <img className="w-100" src={imgLogoJuridico} alt="Logotipo" />
+            <img className="w-50"src={imgSeta} alt="Ver mais" />
           </div>
 
-          <div className="info-banner d-flex flex-column justify-content-center py-5 col-5">
+          <div className="info-banner d-flex flex-column justify-content-center py-5 col-md-6 col-xl-4">
             <h1 className="pt-5">
               Plano para a <br />
               sua empresa
             </h1>
             <div className="detalhe-titulo-dois"></div>
-            <h5 className="pt-4 h3">
+            <h5 className="pt-4 h4">
               Esteja bem preparado para imprevistos com você, sua empresa, seus
               funcionários e seu patrimônio.
             </h5>
@@ -46,31 +46,31 @@ export default function Juridico() {
       <section className="cartoes-solucoes py-5">
         <div className="container d-flex flex-wrap">
           <CardSoluções
-            coluna="col-4"
+            coluna="col-12 col-md-6 col-lg-4"
             titulo="Planejamento Sucessório"
             descricao="É possível garantir a perpetuidade do seu negócio com um planejamento sucessório que atenda às suas necessidades."
             imagemFundo={imgPlanSucess}
           />
           <CardSoluções
-            coluna="col-4"
+            coluna="col-12 col-md-6 col-lg-4"
             titulo="Gestão e consultoria em benefícios"
             descricao="Vida, Saúde, Odontológico, Previdência"
             imagemFundo={imgPlanGestConsulBene}
           />
           <CardSoluções
-            coluna="col-4"
+            coluna="col-12 col-lg-4"
             titulo="Linhas de Crédito"
             descricao="Planejar a aquisição de máquinas, equipamentos e imóveis, bem como a troca da frota pode flexibilizar o fluxo de caixa da empresa"
             imagemFundo={imgPlanLinhaCredi}
           />
           <CardSoluções
-            coluna="col-6"
+            coluna="col-12 col-lg-6"
             titulo="Câmbio"
             descricao="Opere com segurança e tranquilidade com quem conhece o mercado."
             imagemFundo={imgPlanCambio}
           />
           <CardSoluções
-            coluna="col-6"
+            coluna="col-12 col-lg-6"
             titulo="Seguro Empresarial"
             descricao="Benefícios fiscais para as empresas, além de reter e fidelizar talentos, agrega valores às equipes e aos funcionários"
             imagemFundo={imgPlanSegEmpres}

@@ -12,7 +12,7 @@
 }
 
 .info-banner{
-    padding: 0 5% 0 15%;
+    padding: 0 2em 0 12em;
 }
 
 .info-banner h1{
@@ -25,4 +25,10 @@
 .cartoes-solucoes{
     background-color: #F0F2F5;
     color: #4D6361;
+}
+
+@media(max-width: 1141px){
+    .info-banner{
+        padding: 0 2em 0 2em;
+    }
 }
