@@ -1,13 +1,58 @@
-.header{
-    height: 127px;
-    font-size: 18px;
-}
-.att{
-    background-color: #12A2DA;
-    border: none;
-    border-radius: 25px;
+.header {
+  background-color: #fff;
+  max-width: 415px;
+  max-height: 127px;
+  transition: 0s;
 }
 
-.att:hover{
-    background-color: #1B5588;
+.header header {
+  max-width: 540px;
+  width: auto;
+  font-size: 18px;
+}
+
+.button-menu {
+  border: none;
+  background-color: #ffffff00;
+}
+
+.att {
+  background-color: #12a2da;
+  border: none;
+  border-radius: 25px;
+}
+
+.att:hover {
+  background-color: #1b5588;
+}
+
+@media (min-width: 589px) {
+  .header{
+    max-width: 999999999px;
+    width: auto;
+  }
+  .header header {
+    max-width: 720px;
+    width: auto;
+  }
+}
+
+@media (min-width: 720px) {
+  .header header {
+    max-width: 960px;
+    width: auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .header header {
+    max-width: 1140px;
+    width: auto;
+  }
+}
+@media (min-width: 1140px) {
+  .header header {
+    max-width: 1320px;
+    width: auto;
+  }
 }

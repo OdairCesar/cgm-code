@@ -45,17 +45,17 @@ export default function Inicio() {
             <span>Trabalhamos com as melhores seguradoras</span>
           </div>
 
-          <div className="d-flex align-items-start justify-content-between">
-            <div className="cardApresentacao d-flex flex-column align-items-center col-6">
-              <img src={imgPessoaFisica} alt="Sou Pessoa Fisica" />
+          <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+            <div className="cardApresentacao d-flex flex-column align-items-center col-12 col-md-6 p-3">
+              <img className="w-100" src={imgPessoaFisica} alt="Sou Pessoa Fisica" />
               <button className="d-flex">
                 <Link to='/fisico'>Sou Pessoa Física</Link>
                 <Icone cssBootstrap="ps-2" nameIcone="arrow-right" />
               </button>
             </div>
 
-            <div className="cardApresentacao d-flex flex-column align-items-center col-6">
-              <img src={imgPessoaJurídica} alt="Sou Pessoa Fisica" />
+            <div className="cardApresentacao d-flex flex-column align-items-center col-12 col-md-6 p-3">
+              <img className="w-100" src={imgPessoaJurídica} alt="Sou Pessoa Fisica" />
               <button className="d-flex">
                 <Link to="/juridico">Sou Pessoa Juridica</Link>
                 <Icone cssBootstrap="ps-2" nameIcone="arrow-right" />
@@ -74,7 +74,7 @@ export default function Inicio() {
               </div>
 
               <div
-                className="swiper-wrapper d-flex justify-content-around"
+                className="swiper-wrapper d-flex flex-wrap justify-content-around"
                 style={{ width: "1300px" }}
               >
                 <span className="cardParceiros">Marca</span>
@@ -96,14 +96,14 @@ export default function Inicio() {
       <Depoimento />
 
       <section className="Historia">
-        <div className="container d-flex py-5 align-items-stretch">
+        <div className="container d-flex flex-column flex-lg-row py-5 align-items-center">
           <img
-            className="col-7"
+            className="col-12 col-lg-7"
             src={imgHistoria}
             alt="Imagem do 'nossa histaria'"
           />
 
-          <div className="nossa-historia d-flex flex-column justify-content-center col-5">
+          <div className="nossa-historia d-flex flex-column justify-content-center col-lg-5">
             <h5>Muito mais do que seguro.</h5>
             <h1>Segurança</h1>
             <h4>Muito prazer! Nós somos a CGM Seguro...</h4>

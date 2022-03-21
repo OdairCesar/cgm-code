@@ -115,3 +115,9 @@
 .button-historia:hover{
     background-color: #1B5588;
 }
+
+@media(max-width: 589px){
+    .banner-inicio{
+        margin-top: 0px;
+    }
+}

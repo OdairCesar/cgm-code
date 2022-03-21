@@ -21,8 +21,8 @@ export default function Depoimento(){
             falam sobre nós:
         </TituloDois>
 
-        <div className="lista-depoimentos d-flex flex-row justify-content-between mt-5">
-          <div className="cardDepoimento">
+        <div className="lista-depoimentos d-flex flex-row flex-wrap justify-content-center mt-5">
+          <div className="cardDepoimento p-2">
             <div className="avaliacao">
               <img src={imgAsbas} alt="Depoimento" />
               <p>
@@ -40,7 +40,7 @@ export default function Depoimento(){
             <div className="fw-bolder mt-3">Cliente de Bauru - SP</div>
           </div>
 
-          <div className="cardDepoimento">
+          <div className="cardDepoimento d-none d-lg-block p-2" p-2>
             <div className="avaliacao">
               <img src={imgAsbas} alt="Depoimento" />
               <p>
@@ -58,7 +58,7 @@ export default function Depoimento(){
             <div className="fw-bolder mt-3">Cliente de Bauru - SP</div>
           </div>
 
-          <div className="cardDepoimento">
+          <div className="cardDepoimento d-none d-xl-block p-2">
             <div className="avaliacao">
               <img src={imgAsbas} alt="Depoimento" />
               <p>
