@@ -11,3 +11,9 @@
 .info-extra{
     background-color: #1B5588;
 }
+
+.paginas a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+}

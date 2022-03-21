@@ -4,5 +4,10 @@
 }
 .att{
     background-color: #12A2DA;
+    border: none;
     border-radius: 25px;
+}
+
+.att:hover{
+    background-color: #1B5588;
 }

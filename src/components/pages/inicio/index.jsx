@@ -1,8 +1,6 @@
 import React from "react";
 
 import "./index.css";
-
-import Menu from "../../layout/header";
 import Contato from "../../layout/contato";
 import Icone from "../../template/icone";
 import Depoimento from "../../layout/depoimento";
@@ -11,15 +9,14 @@ import logo from "../../../assets/img/logo7.png";
 import imgPessoaFisica from "../../../assets/img/image4.png";
 import imgPessoaJurídica from "../../../assets/img/image6.png";
 import imgHistoria from "../../../assets/img/image8.png";
-import Footer from "../../layout/footer";
 import TituloDois from "../../template/tituloDois";
+import { Link } from "react-router-dom";
 
 export default function Inicio() {
   return (
     <>
-      <Menu />
       {/*================= BANNER/INICIO =====================*/}
-      <section className="banner-inicio">
+      <section id='top' className="banner-inicio">
         <div className="banner-inicio-conteudo container d-flex align-items-end">
           <div className="d-flex flex-column pb-5">
             <h1 className="text-white fw-bold">
@@ -30,10 +27,10 @@ export default function Inicio() {
             <span className="efeito-loop mt-5 mb-2"></span>
 
             <div className="d-flex mt-2 mb-5">
-              <span class="circulo-ativo me-2"></span>
-              <span class="circulo me-2"></span>
-              <span class="circulo me-2"></span>
-              <span class="circulo me-2"></span>
+              <span className="circulo-ativo me-2"></span>
+              <span className="circulo me-2"></span>
+              <span className="circulo me-2"></span>
+              <span className="circulo me-2"></span>
             </div>
           </div>
         </div>
@@ -51,18 +48,18 @@ export default function Inicio() {
           <div className="d-flex align-items-start justify-content-between">
             <div className="cardApresentacao d-flex flex-column align-items-center col-6">
               <img src={imgPessoaFisica} alt="Sou Pessoa Fisica" />
-              <span className="d-flex">
-                Sou Pessoa Física
+              <button className="d-flex">
+                <Link to='/fisico'>Sou Pessoa Física</Link>
                 <Icone cssBootstrap="ps-2" nameIcone="arrow-right" />
-              </span>
+              </button>
             </div>
 
             <div className="cardApresentacao d-flex flex-column align-items-center col-6">
               <img src={imgPessoaJurídica} alt="Sou Pessoa Fisica" />
-              <span className="d-flex">
-                Sou Pessoa Juridica
+              <button className="d-flex">
+                <Link to="/juridico">Sou Pessoa Juridica</Link>
                 <Icone cssBootstrap="ps-2" nameIcone="arrow-right" />
-              </span>
+              </button>
             </div>
           </div>
 
@@ -80,12 +77,12 @@ export default function Inicio() {
                 className="swiper-wrapper d-flex justify-content-around"
                 style={{ width: "1300px" }}
               >
-                <span class="cardParceiros">Marca</span>
-                <span class="cardParceiros">Marca</span>
-                <span class="cardParceiros">Marca</span>
-                <span class="cardParceiros">Marca</span>
-                <span class="cardParceiros">Marca</span>
-                <span class="cardParceiros">Marca</span>
+                <span className="cardParceiros">Marca</span>
+                <span className="cardParceiros">Marca</span>
+                <span className="cardParceiros">Marca</span>
+                <span className="cardParceiros">Marca</span>
+                <span className="cardParceiros">Marca</span>
+                <span className="cardParceiros">Marca</span>
               </div>
 
               <div className="swiper-button-next">
@@ -126,7 +123,7 @@ export default function Inicio() {
             </p>
 
             <button className="button-historia d-flex justify-content-center text-white h5">
-              Conheça nossa história
+              <Link to='/sobre'>Conheça nossa história</Link>
               <Icone cssBootstrap='ms-2' nameIcone='arrow-right' />
             </button>
           </div>
@@ -134,7 +131,6 @@ export default function Inicio() {
       </section>
 
       <Contato />
-      <Footer />
     </>
   );
 }

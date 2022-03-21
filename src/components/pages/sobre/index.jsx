@@ -2,8 +2,6 @@ import React from "react";
 import "./index.css";
 
 import Depoimento from "../../layout/depoimento";
-import Footer from "../../layout/footer";
-import Header from "../../layout/header";
 import TituloDois from "../../template/tituloDois";
 
 import imgLogoSobre from "../../../assets/img/logo1.png";
@@ -11,8 +9,7 @@ import imgLogoSobre from "../../../assets/img/logo1.png";
 export default function Sobre() {
   return (
     <>
-      <Header />
-      <section className="banner-sobre py-5">
+      <section id='top' className="banner-sobre py-5">
         <div className="container d-flex flex-column justify-content-end py-5">
           <h1 className="mb-5 text-white text-uppercase">
             Sobre a cgm
@@ -128,7 +125,6 @@ export default function Sobre() {
         </div>
       </section>
       <Depoimento />
-      <Footer />
     </>
   );
 }

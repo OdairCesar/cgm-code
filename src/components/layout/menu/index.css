@@ -3,3 +3,13 @@
     width: 446px;
     font-size: 18px;
 }
+.menu a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #8D9C96;
+}
+
+.menu a:hover{
+    color: #1B5588;
+}

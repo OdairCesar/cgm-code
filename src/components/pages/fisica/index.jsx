@@ -1,9 +1,7 @@
 import React from "react";
 import "./index.css";
 
-import Header from "../../layout/header";
 import Contato from "../../layout/contato";
-import Footer from "../../layout/footer";
 import CardSoluções from "../../template/cardSolucoes";
 
 import imgLogoFisico from "../../../assets/img/logo7.png";
@@ -20,8 +18,7 @@ import imgPlanGestRisc from "../../../assets/img/image19.png";
 export default function Fisico() {
   return (
     <>
-      <Header />
-      <section className="banner-fisico py-5">
+      <section id='top' className="banner-fisico py-5">
         <div className="container-personalizado">
           <div className="info-banner d-flex flex-column justify-content-center py-5 col-5">
             <h1 className="pt-5">
@@ -95,7 +92,6 @@ export default function Fisico() {
         </div>
       </section>
       <Contato />
-      <Footer />
     </>
   );
 }

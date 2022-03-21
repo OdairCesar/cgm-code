@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./index.css";
 
@@ -13,11 +14,11 @@ export default function Footer() {
         <div className="container d-flex py-5 justify-content-between">
           <img src={imgLogo} alt="Logo do rodapé" />
 
-          <div className="paginas pt-4">
-            <p>Início</p>
-            <p>Sobre</p>
-            <p>Soluções</p>
-            <p>Contatos</p>
+          <div className="paginas pt-4 d-flex flex-column">
+            <Link to='/#top'>Início</Link>
+            <Link to='/sobre#top'>Sobre</Link>
+            <Link to='/fisico#top'>Fisico</Link>
+            <Link to='/juridico#top'>Juridico</Link>
           </div>
 
           <div className="info-contato pt-4">
@@ -37,9 +38,9 @@ export default function Footer() {
           </div>
 
           <div className="info-redesocial d-flex justify-content-end align-items-center col-3 text-center">
-            <Icone cssBootstrap='bg-white mx-1 rounded-circle' nameIcone="facebook" />
-            <Icone cssBootstrap='bg-white mx-1 rounded-circle' nameIcone="linkedin" />
-            <Icone cssBootstrap='bg-white mx-1 rounded-circle' nameIcone="instagram" />
+            <a href='https://www.facebook.com/' target="_blank"><Icone cssBootstrap='bg-white text-black-50 mx-1 rounded-circle' nameIcone="facebook" /></a>
+            <a href='https://www.linkedin.com/' target="_blank"><Icone cssBootstrap='bg-white text-black-50 mx-1 rounded-circle' nameIcone="linkedin" /></a>
+            <a href='https://www.instagram.com/' target="_blank"><Icone cssBootstrap='bg-white text-black-50 mx-1 rounded-circle' nameIcone="instagram" /></a>
           </div>
         </div>
       </section>

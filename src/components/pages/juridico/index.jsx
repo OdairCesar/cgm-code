@@ -1,9 +1,7 @@
 import React from "react";
 import "./index.css";
 
-import Header from "../../layout/header";
 import Contato from "../../layout/contato";
-import Footer from "../../layout/footer";
 import CardSoluções from "../../template/cardSolucoes";
 
 import imgLogoJuridico from "../../../assets/img/logo7.png";
@@ -18,8 +16,7 @@ import imgPlanSegEmpres from "../../../assets/img/image1.png";
 export default function Juridico() {
   return (
     <>
-      <Header />
-      <section className="banner-juridico py-5">
+      <section id='top' className="banner-juridico py-5">
         <div className="container-personalizado">
           <img
             className="imagem-banner-juridico col-5"
@@ -81,7 +78,6 @@ export default function Juridico() {
         </div>
       </section>
       <Contato />
-      <Footer />
     </>
   );
 }
