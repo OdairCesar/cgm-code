@@ -12,10 +12,10 @@ export default function Footer() {
     <>
       <section className="info-extra text-white">
         <div className="container d-flex flex-wrap py-5 justify-content-center">
-          <div className="d-flex flex-column flex-md-row col-12 col-md-6">
+          <div className="d-flex flex-column flex-md-row col-9 col-md-6">
             <img className="p-5 p-md-3 p-lg-0" src={imgLogo} alt="Logo do rodapé" />
 
-            <div className="paginas d-flex flex-column pt-4 px-5 px-md-2 px-lg-5">
+            <div className="paginas d-flex flex-column align-items-center align-items-md-start pt-4 px-5 px-md-2 px-lg-5">
               <Link to="/#top">Início</Link>
               <Link to="/sobre#top">Sobre</Link>
               <Link to="/fisico#top">Fisico</Link>
@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
 
           <div className="d-flex flex-column flex-md-row justify-content-between col-12 col-md-6">
-            <div className="info-contato pt-4 px-5 px-md-0">
+            <div className="info-contato d-flex flex-column align-items-center align-items-md-start pt-4 px-5 px-md-0">
               <p>Informações</p>
               <p className="d-flex h5">
                 <Icone cssBootstrap="me-2" nameIcone="facebook" />

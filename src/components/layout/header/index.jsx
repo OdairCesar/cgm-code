@@ -8,7 +8,7 @@ import Menu from "../menu";
 
 export default function Header() {
   const [backHeader, setBackHeader] = useState(false);
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const openMenu = () => {
     if (window.innerWidth < 589) {
@@ -43,13 +43,13 @@ export default function Header() {
     <section className={`header ${showMenu || backHeader ? "header-show" : ""} ${showMenu? 'h-100': ''}fixed-top`}>
       <header className={`container d-flex ${showMenu? 'flex-column': 'flex-row'} align-items-center  align-items-center justify-content-between py-xl-4`}>
         <img
-          className={`col-5 col-md-5 col-lg-4 col-xl-2 my-2 me-md-5 me-lg-4`}
+          className={`col-5 col-md-5 col-lg-4 col-xl-2 my-2`}
           src={logo}
           alt="Logotipo"
         />
 
         <div
-          className={`d-md-flex col-md-7 col-lg-8 col-xl-10 justify-content-between`}
+          className={`d-md-flex col-md-7 col-lg-8 col-xl-10 justify-content-between ps-md-5`}
         >
           <Menu showMenu={showMenu}/>
 
