@@ -7,7 +7,7 @@ import Icone from "../../template/icone";
 export default function Contato() {
   return (
     <section className="contato py-5">
-      <div className="container d-flex flex-column-reverse flex-lg-row">
+      <div className="container d-flex flex-column flex-lg-row">
         <div className="d-flex flex-column col-12 col-lg-6 py-4 pe-4">
           <div className="titulo-contato">
             <h4>Ficou com dúvidas?</h4>

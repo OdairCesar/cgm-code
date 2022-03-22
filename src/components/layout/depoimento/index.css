@@ -6,9 +6,8 @@
 
 .img-depoimentos{
     position: absolute;
-    margin-left: -190px;
-    margin-top: 3em;
-    z-index: 0;
+    left: 9em;
+    margin-top: 6em;
 }
 
 .cardDepoimento{
@@ -25,4 +24,12 @@
 
 .cardDepoimento .avaliacao img{
     margin-left: -10px;
+}
+
+@media(max-width: 589px){
+    .img-depoimentos{
+        width: 230px;
+        left: -9em;
+        margin-top: 9em;
+    }
 }

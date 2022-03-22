@@ -21,10 +21,20 @@
     font-weight: 800;
 }
 
+.imagem-banner-fisico{
+    filter: drop-shadow(0px 10px 25px #1b5588a9);
+    -webkit-filter: drop-shadow(0px 10px 25px #1b5588a9);
+}
 /*============ LISTA CATOES SOLUCOES =============*/
 .cartoes-solucoes{
     background-color: #F0F2F5;
     color: #4D6361;
+}
+
+@media(max-width: 589px){
+    .banner-fisico{
+        margin-top: 0px;
+    }
 }
 
 @media(max-width: 1141px){

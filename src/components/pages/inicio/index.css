@@ -8,6 +8,16 @@
     height: 772px;
 }
 
+.titulo-banner-inicio{
+    font-weight: 700;
+}
+
+.sombra{
+    color: #00000000;
+    -webkit-text-stroke: .5px #FFF;
+    text-stroke: .5px #FFF;
+}
+
 .efeito-loop{
     height: 3.5px;
     width: 357px;
@@ -44,9 +54,10 @@
     width: 400px;
 }
 
-.solucoes-titulo span{
+.solucoes-titulo h5{
     color: #8D9C96;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 1.5em;
 }
 
 .cardApresentacao img{
@@ -91,8 +102,15 @@
     border-radius: 5px;
 }
 
+/*==================== SOBRE NOS ==================*/
 .historia{
     color: #4D6361;
+}
+
+.historia h1{
+    font-size: 55px;
+    font-weight: 700;
+    color: #1B5588;
 }
 
 .button-historia{
@@ -119,5 +137,9 @@
 @media(max-width: 589px){
     .banner-inicio{
         margin-top: 0px;
+    }
+    .solucoes-titulo h5{
+        font-size: 1em;
+        font-weight: 500;
     }
 }

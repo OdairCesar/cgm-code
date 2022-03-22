@@ -1,8 +1,10 @@
 .header {
+  max-width: 535px;
+  max-height: 500px;
+  transition: .3s;
+}
+.header-show{
   background-color: #fff;
-  max-width: 415px;
-  max-height: 127px;
-  transition: 0s;
 }
 
 .header header {
@@ -30,6 +32,7 @@
   .header{
     max-width: 999999999px;
     width: auto;
+    max-height: 127px;
   }
   .header header {
     max-width: 720px;

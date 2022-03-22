@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./index.css";
 
-export default function Menu() {
+export default function Menu({showMenu}) {
   return (
-    <ul className="menu d-none d-md-flex align-items-center justify-content-between text-secondary m-0 p-0">
+    <ul className={`menu ${showMenu? 'd-flex flex-column' : 'd-none'} d-md-flex align-items-center justify-content-between text-secondary m-0 p-0`}>
       <li>
         <Link to="/">Início</Link>
       </li>

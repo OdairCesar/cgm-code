@@ -17,16 +17,16 @@ export default function Inicio() {
     <>
       {/*================= BANNER/INICIO =====================*/}
       <section id="top" className="banner-inicio">
-        <div className="banner-inicio-conteudo container d-flex align-items-end">
-          <div className="d-flex flex-column pb-5">
-            <h1 className="text-white fw-bold">
+        <div className="banner-inicio-conteudo container d-flex justify-content-center align-items-start justify-content-md-start align-items-md-end pt-5 pt-md-0">
+          <div className="d-flex flex-column py-5">
+            <h1 className="titulo-banner-inicio text-white pt-5">
               <span className="sombra">Sua empresa sempre </span>
               <br />
               protegida com a gente!
             </h1>
-            <span className="efeito-loop mt-5 mb-2"></span>
+            <span className="d-none d-md-block efeito-loop mt-5 mb-2"></span>
 
-            <div className="d-flex mt-2 mb-5">
+            <div className="d-none d-md-flex mt-2 mb-5">
               <span className="circulo-ativo me-2"></span>
               <span className="circulo me-2"></span>
               <span className="circulo me-2"></span>
@@ -38,11 +38,11 @@ export default function Inicio() {
 
       {/*================= SOLUÇÕES =====================*/}
       <section className="solucoes-inicio">
-        <div className="container p-0 py-5">
+        <div className="container py-5">
           <div className="solucoes-titulo d-flex flex-column align-items-center">
             <img src={logo} alt="Imagem Soluções" />
             <h1>Soluções</h1>
-            <span>Trabalhamos com as melhores seguradoras</span>
+            <h5>Trabalhamos com as melhores seguradoras</h5>
           </div>
 
           <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
@@ -74,7 +74,7 @@ export default function Inicio() {
           <div className="parceiros-inicio d-flex flex-column align-items-center my-5">
             <TituloDois>Nossos Parceiros</TituloDois>
 
-            <div className="d-flex justify-content-between align-items-center w-100 mt-2">
+            <div className="d-flex justify-content-between align-items-center w-100 mt-2 px-4">
               <div className="button-prev">
                 <Icone cssBootstrap="h3" nameIcone="angle-left" />
               </div>
@@ -93,14 +93,14 @@ export default function Inicio() {
               <div className="button-next">
                 <Icone cssBootstrap="h3" nameIcone="angle-right" />
               </div>
-  </div>
+            </div>
           </div>
         </div>
       </section>
 
       <Depoimento />
-
-      <section className="Historia">
+ 
+      <section className="historia">
         <div className="container d-flex flex-column flex-lg-row py-5 align-items-center">
           <img
             className="col-12 col-lg-7"
@@ -110,7 +110,7 @@ export default function Inicio() {
 
           <div className="nossa-historia d-flex flex-column justify-content-center col-lg-5">
             <h5>Muito mais do que seguro.</h5>
-            <h1>Segurança</h1>
+            <h1>Segurança!</h1>
             <h4>Muito prazer! Nós somos a CGM Seguro...</h4>
             <p>
               São mais de 00 anos de mercado, priorizando e aperfeiçoando o

@@ -8,13 +8,14 @@ import imgDepoimentos from "../../../assets/img/image9.png";
 
 export default function Depoimento(){
     return(
-      <section className="depoimentos">
-      <div className="container d-flex flex-column py-5">
+      <>
         <img
           className="img-depoimentos"
           src={imgDepoimentos}
           alt="Desenho de fundo dos depoimentos"
         />
+      <section className="depoimentos">
+      <div className="container d-flex flex-column py-5">
 
         <TituloDois>
             O que nossos clientes <br />
@@ -78,5 +79,6 @@ export default function Depoimento(){
         </div>
       </div>
     </section>
+    </>
     )
 }
