@@ -48,9 +48,7 @@ export default function Header() {
           alt="Logotipo"
         />
 
-        <div
-          className={`d-md-flex col-md-7 col-lg-8 col-xl-10 justify-content-between ps-md-5`}
-        >
+        <div className={`d-md-flex col-md-7 col-lg-8 col-xl-10 justify-content-between ps-md-5`}>
           <Menu showMenu={showMenu}/>
 
           <div className="d-none d-lg-flex align-items-center ms-5 justify-content-end">

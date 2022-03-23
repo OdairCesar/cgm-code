@@ -92,11 +92,15 @@
     color: #ffffff;
 }
 
+
 .parceiros-inicio h2{
     color: #4D6361;
 }
 
 .cardParceiros{
+    padding: 30px 50px;
+    margin: 0;
+    text-align: center;
     box-sizing:initial;
     box-shadow: 0px 60px 50px #1b558844;
     border-radius: 5px;

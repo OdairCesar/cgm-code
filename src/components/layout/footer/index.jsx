@@ -26,18 +26,18 @@ export default function Footer() {
           <div className="d-flex flex-column flex-md-row justify-content-between col-12 col-md-6">
             <div className="info-contato d-flex flex-column align-items-center align-items-md-start pt-4 px-5 px-md-0">
               <p>Informações</p>
-              <p className="d-flex h5">
+              <span className="d-flex h5">
                 <Icone cssBootstrap="me-2" nameIcone="facebook" />
                 (00) 0000-0000
-              </p>
-              <p className="d-flex h5">
+              </span>
+              <span className="d-flex h5">
                 <Icone cssBootstrap="me-2" nameIcone="facebook" />
                 contato@cgm.com.br
-              </p>
-              <p className="d-flex h5">
+              </span>
+              <span className="d-flex h5">
                 <Icone cssBootstrap="me-2" nameIcone="facebook" />
                 Seg. a sex. das 9h às 18h
-              </p>
+              </span>
             </div>
 
             <div className="info-redesocial d-flex justify-content-center align-items-center text-center">

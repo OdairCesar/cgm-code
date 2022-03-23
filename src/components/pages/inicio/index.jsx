@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./index.css";
@@ -13,6 +13,63 @@ import imgHistoria from "../../../assets/img/image8.png";
 import TituloDois from "../../template/tituloDois";
 
 export default function Inicio() {
+  let [loop, setLoop ] = useState([]);
+  let [contList, setContList ] = useState(0);
+  let [tamLoop, setTamLoop ] =  useState(1);
+
+  useEffect(() => {
+    setLoop(document.querySelectorAll(".cardParceiros"));
+    if(window.innerWidth >= 1200) { 
+      setTamLoop(6)
+    }else if(window.innerWidth >= 960){
+      setTamLoop(4)
+    }else if(window.innerWidth >= 720){
+      setTamLoop(3)
+    }else{
+      setTamLoop(1)
+    }
+    
+    console.log(window.innerWidth > 1190)
+  }, []);
+
+  const nextLoop = () => {
+    if (!(contList + tamLoop >= 10)) {
+      if(window.innerWidth > 1190){
+        loop[contList].classList.add("d-none", "d-md-none" ,"d-lg-none", "d-xl-none");
+        loop[contList + tamLoop].classList.remove("d-none", "d-md-none" ,"d-lg-none", "d-xl-none");
+      }else if(window.innerWidth > 960){
+        loop[contList].classList.add("d-none", "d-md-none" ,"d-lg-none");
+        loop[contList + tamLoop].classList.remove("d-none", "d-md-none" ,"d-lg-none");
+      }else if(window.innerWidth > 720){
+        loop[contList].classList.add("d-none", "d-md-none");
+        loop[contList + tamLoop].classList.remove("d-none", "d-md-none");
+      }else{
+        loop[contList].classList.add("d-none");
+        loop[contList + tamLoop].classList.remove("d-none");
+      }
+      setContList(contList + 1);
+    }
+  };
+
+  const prevLoop = () => {
+    if(!(contList < 0)){
+      if(window.innerWidth > 1190){
+        loop[contList + tamLoop].classList.add("d-none", "d-md-none" ,"d-lg-none", "d-xl-none");
+        loop[contList].classList.remove("d-none", "d-md-none" ,"d-lg-none", "d-xl-none");
+      }else if(window.innerWidth > 960){
+        loop[contList + tamLoop].classList.add("d-none", "d-md-none" ,"d-lg-none");
+        loop[contList].classList.remove("d-none", "d-md-none" ,"d-lg-none");
+      }else if(window.innerWidth > 720){
+        loop[contList + tamLoop].classList.add("d-none", "d-md-none");
+        loop[contList].classList.remove("d-none", "d-md-none");
+      }else{
+        loop[contList + tamLoop].classList.add("d-none");
+        loop[contList].classList.remove("d-none");
+      }
+      setContList(contList - 1);
+    }
+  };
+
   return (
     <>
       {/*================= BANNER/INICIO =====================*/}
@@ -74,23 +131,25 @@ export default function Inicio() {
           <div className="parceiros-inicio d-flex flex-column align-items-center my-5">
             <TituloDois>Nossos Parceiros</TituloDois>
 
-            <div className="d-flex justify-content-between align-items-center w-100 mt-2 px-4">
-              <div className="button-prev">
+            <div className="d-flex justify-content-between align-items-center w-100 mt-5 px-4">
+              <div className="button-prev" onClick={prevLoop}>
                 <Icone cssBootstrap="h3" nameIcone="angle-left" />
               </div>
 
-              <div
-                className="d-flex justify-content-around w-100"
-              >
-                <span className="cardParceiros py-5 px-5">Marca</span>
-                <span className="cardParceiros d-none d-md-block py-5 px-5">Marca</span>
-                <span className="cardParceiros d-none d-md-block py-5 px-5">Marca</span>
-                <span className="cardParceiros d-none d-lg-block py-5 px-5">Marca</span>
-                <span className="cardParceiros d-none d-xl-block py-5 px-5">Marca</span>
-                <span className="cardParceiros d-none d-xl-block py-5 px-5">Marca</span>
+              <div className="loop-parceiros d-flex justify-content-center justify-content-md-between w-100 px-2">
+                <span className="cardParceiros">Marca 1</span>
+                <span className="cardParceiros d-none d-md-block">Marca 2</span>
+                <span className="cardParceiros d-none d-md-block">Marca 3</span>
+                <span className="cardParceiros d-none d-lg-block">Marca 4</span>
+                <span className="cardParceiros d-none d-xl-block">Marca 5</span>
+                <span className="cardParceiros d-none d-xl-block">Marca 6</span>
+                <span className="cardParceiros d-none">Marca 7</span>
+                <span className="cardParceiros d-none">Marca 8</span>
+                <span className="cardParceiros d-none">Marca 9</span>
+                <span className="cardParceiros d-none">Marca 10</span>
               </div>
 
-              <div className="button-next">
+              <div className="button-next" onClick={nextLoop}>
                 <Icone cssBootstrap="h3" nameIcone="angle-right" />
               </div>
             </div>
@@ -99,7 +158,7 @@ export default function Inicio() {
       </section>
 
       <Depoimento />
- 
+
       <section className="historia">
         <div className="container d-flex flex-column flex-lg-row py-5 align-items-center">
           <img
